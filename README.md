@@ -1,7 +1,7 @@
 # Project REST-Rant
 
 REST-Rant is an app where users can review restaurants.
-
+                    ROUTES
 # | Method | path           | purpose                                       |  
 # |------  |----------------|-----------------------------------------------|  
 # | GET    |/               |home page                                      |
@@ -13,3 +13,13 @@ REST-Rant is an app where users can review restaurants.
 # | GET    |/places/:id/edit|form page for editing an existing place        |
 # |DELETE  |/places:id      |delete a particular place                      |
 # |GET     |*               |create a rant(comment) about a particular place|
+
+Database
+  Field   |  Type   |
+---       |---      |
+_id       |Object ID|  
+name      |string   |  
+city      |string   |  
+state     |string   |    
+cuisines  |string   |  
+pic       |string   |  
