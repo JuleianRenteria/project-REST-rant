@@ -4,9 +4,17 @@ router.get('/', (req, res) => {
   res.send('GET /places stub')
 })
 
-router.post('/', (req, res) => {
-  res.send('POST /places stub')
+router.post('/', (req, res) => { 
+  db.Place.create(req.body)
+  .then(() => {
+      res.redirect('/places')
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
 })
+
 
 router.get('/new', (req, res) => {
   res.render('places/new')
