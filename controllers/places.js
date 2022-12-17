@@ -1,7 +1,7 @@
 const router = require('express').Router()
 
 router.get('/', (req, res) => {
-let places = [{
+  let places = [{
     name: 'H-Thai-ML',
     city: 'Seattle',
     state: 'WA',
