@@ -14,6 +14,9 @@ router.get('/', (req, res) => {
     cuisines: 'Coffee, Bakery',
     pic: '/public/images/beatris-m-5RsnvSk1-0U-unsplash.jpg/250/250'
   }]
-  res.render('places/index', { places })      
+  res.render('places/index', {places})
+ }) 
+ router.get('/new', (req, res) => {
+  res.render('places/new')   
  })
 module.exports = router
